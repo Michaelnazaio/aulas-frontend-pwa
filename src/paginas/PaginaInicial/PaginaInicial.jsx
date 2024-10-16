@@ -16,6 +16,20 @@ const PaginaInicial = () => {
 
         </BotaoCustomizado>
 
+        <BotaoCustomizado
+            cor="secundaria"
+            aoClicar={() => navigate('/botao-contador')}
+        >Botão Contador
+
+        </BotaoCustomizado>
+
+        <BotaoCustomizado
+            cor="primaria"
+            aoClicar={() => navigate('/lista-tarefas')}
+        >Lista de Tarefas sdasd
+
+        </BotaoCustomizado>
+
 
         {/* <BotaoCustomizado
             cor="secundaria"

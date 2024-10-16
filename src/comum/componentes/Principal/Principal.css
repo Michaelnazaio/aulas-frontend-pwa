@@ -1,5 +1,5 @@
 .principal_root {
-  background-color: var(--cor-secundaria-escura);
+  background-color: var(--cor-primaria-clara);
   padding: 16px;
   display: flex;
   flex-direction: column;

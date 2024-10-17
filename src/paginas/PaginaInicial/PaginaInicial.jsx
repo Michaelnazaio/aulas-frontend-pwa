@@ -26,7 +26,7 @@ const PaginaInicial = () => {
         <BotaoCustomizado
             cor="primaria"
             aoClicar={() => navigate('/lista-tarefas')}
-        >Lista de Tarefas sdasd
+        >Lista de Tarefas
 
         </BotaoCustomizado>
 

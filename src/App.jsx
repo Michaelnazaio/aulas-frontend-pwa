@@ -1,19 +1,22 @@
+import {
+  createBrowserRouter,
+  RouterProvider,
+} from 'react-router-dom';
 import './App.css';
 import Cabecalho from './comum/componentes/Cabecalho/Cabecalho';
 import Rodape from './comum/componentes/Rodape/Rodape';
-import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 
-import PaginaInicial from './paginas/PaginaInicial/PaginaInicial';
-import ListaProdutos from './paginas/ListaProdutos/ListaProdutos';
 import BotaoContador from './paginas/BotaoContador/BotaoContador';
+import ListaProdutos from './paginas/ListaProdutos/ListaProdutos';
+import PaginaInicial from './paginas/PaginaInicial/PaginaInicial';
 import PaginaListaTarefas from './paginas/PaginaListaTarefas/PaginaListaTarefas';
-
-
+import PaginaListaClientes from './paginas/PaginaListaClientes/PaginaListaClientes';
+import PaginaCadastroCliente from './paginas/PaginaCadastroClientes/PaginaCadastroCliente';
 
 const router = createBrowserRouter([
   {
     path: '',
-    element: <PaginaInicial />
+    element: <PaginaInicial />,
   },
   {
     path: 'lista-produtos',
@@ -27,9 +30,15 @@ const router = createBrowserRouter([
     path: 'lista-tarefas',
     element: <PaginaListaTarefas />,
   },
-
- ]);
- 
+  {
+    path: 'lista-clientes',
+    element: <PaginaListaClientes />,
+  },
+  {
+    path: 'cadastro-cliente',
+    element: <PaginaCadastroCliente />,
+  },
+]);
 
 function App() {
   return (
